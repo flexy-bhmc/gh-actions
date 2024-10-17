@@ -1,0 +1,18 @@
+name: 02 - Workflow Events
+on:
+  push
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show the trigger
+        run: echo "Workflow trigger is ${{github.event_name}}"
+  echo-goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Failed step
+        run: |
+          echo "I will fail!"
+          exit 1
+      - name: Say goodbye
+        run: echo "Goodbye!"
