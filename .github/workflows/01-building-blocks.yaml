@@ -14,6 +14,7 @@ jobs:
           #! /bin/bash
           set -e
           echo "I will fail!"
+          exit 0
       - name: Say goodbye
         run: echo "Goodbye!"
 
