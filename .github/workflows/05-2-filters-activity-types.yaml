@@ -1,5 +1,6 @@
 name: 05 - 2 - Event Filters and Activity Types
-on: pull-request
+on:
+  pull-request:
     types:
       - closed
     branches:
