@@ -42,7 +42,7 @@ jobs:
           echo "Org overwritten var: $OVERWRITTEN_VAR"
   echo-prod:
     runs-on: ubuntu-latest
-    env:
+    env: prod
     steps:
       - name: Print Prod Variables
         run: |
