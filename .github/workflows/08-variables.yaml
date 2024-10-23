@@ -6,9 +6,9 @@ on:
 #      debug:
 #        type: boolean
 #        default: false
-  env:
-    WORKFLOW_VAR: 'I am a workflow env var'
-    OVERWRITTEN: 'I will be overwritten'
+env:
+  WORKFLOW_VAR: 'I am a workflow env var'
+  OVERWRITTEN: 'I will be overwritten'
 
 jobs:
   echo:
