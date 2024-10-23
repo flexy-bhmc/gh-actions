@@ -27,7 +27,6 @@ jobs:
           echo "Job env var: $JOB_VAR"
           echo "Workflow env var: $WORKFLOW_VAR"
           echo "Overwritten: $OVERWRITTEN"
-    steps:
       - name: Overwrite Job Variable
         env:
           OVERWRITTEN: 'I have been overwritten at the step level'
