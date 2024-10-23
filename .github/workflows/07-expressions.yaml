@@ -7,12 +7,14 @@ on:
         type: boolean
         default: false
 
+run-name: 07 - Using Expressions | DEBUG - <'ON' if the debug input is true, 'OFF' otherwise>
+
 jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
       - name: Print start-up data
-        if: ${{ inputs.debug }}
+        if: ${{ inputs.debug && true || false}}
         run: |
           echo "Triggered by: ${{ github.event }}"
           echo "Branch: ${{ github.ref }}"
